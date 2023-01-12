@@ -1,0 +1,349 @@
+/* 
+Theme Name: Shangri-La Theme
+Theme URI: http://dev.saitnewmedia.ca/~jbaek/mmda324/final/
+Description: An alternative theme for the Shangri-la site
+Author: Jewon Baek
+Author URI: http://dev.saitnewmedia.ca/~jbaek/wptest/
+Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-new-bg: rgb(250, 235, 215);
+    --color-skyblue: rgb(85, 172, 238);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-image: url(images/headerbg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+h1 {
+    margin: 0;
+    /* padding: 13vh; */
+}
+
+h1>a>img {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    z-index: 1;
+}
+
+header>form {
+    background-color: var(--color-white);
+    width: 200px;
+    height: auto;
+    right: 2%;
+    position: absolute;
+    top: 34vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+input#s,
+input#searchbutton {
+    border: none;
+}
+
+
+nav#main-nav {
+    position: absolute;
+    top: 0;
+
+}
+
+ul#menu-main-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    padding: 1.3rem;
+    text-align: right;
+    margin: 0;
+}
+
+li.menu-item {
+    display: inline;
+    padding: 1.5rem;
+
+}
+
+/* li.menu-item:not(:last-of-type) {
+    padding: 1.5rem;
+} */
+
+li.menu-item>a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    display: inline-block;
+    transition: all .2s ease-in;
+}
+
+li.menu-item>a:hover {
+    transform: translateY(-3px);
+}
+
+li.current_page_item>a,
+li.current_page_parent>a {
+    font-weight: 600;
+    color: var(--color-skyblue);
+
+}
+
+/* Home */
+main {
+    max-width: 110ch;
+    margin: 1rem auto;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+div.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.mainContents {
+    flex-basis: 60%;
+    padding: 1rem;
+}
+
+section.sideBar {
+    flex-basis: 40%;
+    padding: 1rem;
+    border-left: 2px solid var(--color-black);
+}
+
+section.sideBar h3 {
+    margin-top: 3rem;
+}
+
+div.widget>div.is-layout-flex {
+    display: block;
+}
+
+img.wp-image-56,
+img.wp-image-47 {
+    float: right;
+    padding-left: 1rem;
+}
+
+img.wp-image-53 {
+    float: left;
+    padding-right: 1rem;
+}
+
+/* News */
+aside.news-sidebar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(133, 209, 250, 0.2);
+}
+
+div.month-list>div>ul,
+div.category-list>div>ul {
+    padding: 0;
+}
+
+div.month-list>div>ul>li,
+div.category-list>div>ul>li {
+    list-style: none;
+
+}
+
+div.month-list>div>ul>li>a,
+div.category-list>div>ul>li>a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+div.month-list>div>ul>li>a:hover,
+div.category-list>div>ul>li>a:hover {
+    font-weight: 600;
+}
+
+article.blog-post {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    border-bottom: 1px solid var(--color-black);
+}
+
+article.blog-post>a {
+    float: left;
+    padding-right: 2rem;
+}
+
+article.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+
+}
+
+article.blog-post h3 a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+article.blog-post h3 a:hover {
+    border-bottom: 2px solid var(--color-black);
+}
+
+article.blog-post>a,
+a.archive-link {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 600;
+
+}
+
+a.archive-link {
+    background-color: rgba(85, 172, 238, 0.5);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+}
+
+p.author {
+    font-style: italic;
+    text-align: right;
+}
+
+p.author>img {
+    width: 50px;
+    height: 50px;
+}
+
+nav.navigation {
+    text-align: center;
+}
+
+div.nav-links {
+    margin-top: 1.3rem;
+}
+
+div.nav-links>a {
+    font-size: 1.1rem;
+    color: var(--color-black);
+    text-decoration: none;
+
+}
+
+div.nav-links>span.current {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-black);
+    text-decoration: none;
+
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+
+/* Single */
+div#article {
+    padding: 1rem 2rem;
+    line-height: 1.9;
+}
+
+
+p.author>a {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+div.tags {
+    margin-top: 3rem;
+}
+
+span.tag>a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+
+/* Accomodations */
+h2 {
+    margin-top: 0;
+}
+
+article>h2:not(:first-of-type) {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+}
+
+div.wp-block-image:not(:first-of-type) {
+    padding: 2rem 0.5rem;
+}
+
+/* Contact */
+div.is-layout-flow h2 {
+    font-size: 1.8rem;
+}
+
+div.is-layout-flow>h2.sidebar-header {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* ///////////////////// */
+
+body.singlepost main {
+    width: 50%;
+}
+
+/* footer */
+footer {
+    margin-top: 6rem;
+    line-height: 0.9;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+ul.wp-block-social-links {
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-style: italic;
+}
+
+.fa {
+    padding: 10px;
+    width: 33px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 2500px) {
+    main {
+        max-width: 150ch;
+    }
+}
